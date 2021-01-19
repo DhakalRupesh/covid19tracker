@@ -1,5 +1,5 @@
 import React from "react";
-import Virus from "../../assets/virus.png";
+import Virus from "../../assets/v1.png";
 import styles from "./Banner.module.css";
 
 export default function Banner() {

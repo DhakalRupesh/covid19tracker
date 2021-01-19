@@ -1,0 +1,54 @@
+.cardContainer {
+  display: flex;
+  .infectedCard {
+    // width: 20px;
+    padding: 20px 50px 20px 20px;
+    box-shadow: 0px 10px 20px #dfdfdf;
+    border-radius: 16px;
+    margin: 25px 20px 20px 20px;
+    h4 {
+      color: #a57f0d;
+      font-weight: bold;
+    }
+    h5 {
+      color: #404040;
+    }
+    h6 {
+      color: #696868;
+    }
+  }
+  .recoveredCard {
+    // width: 20px;
+    padding: 20px 50px 20px 20px;
+    box-shadow: 0px 10px 20px #dfdfdf;
+    border-radius: 16px;
+    margin: 25px 20px 20px 20px;
+    h4 {
+      color: #55a659;
+      font-weight: bold;
+    }
+    h5 {
+      color: #404040;
+    }
+    h6 {
+      color: #696868;
+    }
+  }
+  .deathsCard {
+    // width: 20px;
+    padding: 20px 50px 20px 20px;
+    box-shadow: 0px 10px 20px #dfdfdf;
+    border-radius: 16px;
+    margin: 25px 20px 20px 20px;
+    h4 {
+      color: #ef5350;
+      font-weight: bold;
+    }
+    h5 {
+      color: #404040;
+    }
+    h6 {
+      color: #696868;
+    }
+  }
+}

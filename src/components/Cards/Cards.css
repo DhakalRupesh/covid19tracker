@@ -1,0 +1,69 @@
+.cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cardContainer .infectedCard {
+  padding: 20px 50px 20px 20px;
+  -webkit-box-shadow: 0px 10px 20px #dfdfdf;
+          box-shadow: 0px 10px 20px #dfdfdf;
+  border-radius: 16px;
+  margin: 25px 20px 20px 20px;
+}
+
+.cardContainer .infectedCard h4 {
+  color: #a57f0d;
+  font-weight: bold;
+}
+
+.cardContainer .infectedCard h5 {
+  color: #404040;
+}
+
+.cardContainer .infectedCard h6 {
+  color: #696868;
+}
+
+.cardContainer .recoveredCard {
+  padding: 20px 50px 20px 20px;
+  -webkit-box-shadow: 0px 10px 20px #dfdfdf;
+          box-shadow: 0px 10px 20px #dfdfdf;
+  border-radius: 16px;
+  margin: 25px 20px 20px 20px;
+}
+
+.cardContainer .recoveredCard h4 {
+  color: #55a659;
+  font-weight: bold;
+}
+
+.cardContainer .recoveredCard h5 {
+  color: #404040;
+}
+
+.cardContainer .recoveredCard h6 {
+  color: #696868;
+}
+
+.cardContainer .deathsCard {
+  padding: 20px 50px 20px 20px;
+  -webkit-box-shadow: 0px 10px 20px #dfdfdf;
+          box-shadow: 0px 10px 20px #dfdfdf;
+  border-radius: 16px;
+  margin: 25px 20px 20px 20px;
+}
+
+.cardContainer .deathsCard h4 {
+  color: #ef5350;
+  font-weight: bold;
+}
+
+.cardContainer .deathsCard h5 {
+  color: #404040;
+}
+
+.cardContainer .deathsCard h6 {
+  color: #696868;
+}
+/*# sourceMappingURL=Cards.css.map */
