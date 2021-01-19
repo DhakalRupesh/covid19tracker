@@ -1,13 +1,21 @@
-import React from "react";
-import { Redirect, Route, Switch } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import { Cards, Chart, Country } from "./components";
-import styles from "./App.module.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import { getData } from "./api";
 
 export default function App() {
+  // const [data, setData] = useState({});
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     setData = await getData();
+  //   };
+  //   fetchData();
+  // });
+
   return (
     <div>
-      hello
       <Cards />
       <Chart />
       <Country />
