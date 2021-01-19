@@ -1,0 +1,18 @@
+.countryContainer {
+  margin: 20px;
+  form {
+    input {
+      border: none;
+      width: 100%;
+      outline: none;
+      padding: 8px 8px 8px 12px;
+      border-radius: 16px;
+      background: #f1f1f1;
+      color: #404040;
+      &:focus {
+        transition: 1s;
+        box-shadow: 0px 10px 15px #f5f4f4;
+      }
+    }
+  }
+}
