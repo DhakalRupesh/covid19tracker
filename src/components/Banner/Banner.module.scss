@@ -1,0 +1,19 @@
+.bannercontainer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 25px 0 0 0;
+  .image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .bannerheading {
+    text-transform: uppercase;
+    color: #404040;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+}
