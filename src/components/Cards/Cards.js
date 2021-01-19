@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Cards.module.css";
 
-const Cards = (props) => {
+const Cards = () => {
   return (
     <>
-      <div>Card Section</div>
+      <div className="font-weight-bold ">Card Section</div>
     </>
   );
 };
