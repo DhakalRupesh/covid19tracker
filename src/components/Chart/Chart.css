@@ -6,4 +6,13 @@
   color: #404040;
   font-weight: bold;
 }
+
+.chartContainer .apChart {
+  width: 100%;
+}
+
+.chartContainer .apChart1 {
+  margin: 20px 0 0 0;
+  width: 100%;
+}
 /*# sourceMappingURL=Chart.css.map */

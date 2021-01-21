@@ -1,22 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ApexChart from "react-apexcharts";
 import "./Chart.css";
+import { fetchDailyData } from "../../api/index";
 
 const Chart = () => {
+  const [dailyData, setDailyData] = useState([]);
+
+  useEffect(() => {
+    const FetchDailyAPI = async () => {
+      setDailyData(await fetchDailyData());
+    };
+    console.log(dailyData);
+    FetchDailyAPI();
+  });
+
   const series = [
     {
       name: "Cases",
-      data: [
-        555,
-        12038,
-        69030,
-        88369,
-        167466,
-        932638,
-        2055423,
-        3343777,
-        3845718,
-      ],
+      data: dailyData.map(({ cases }) => cases),
     },
     {
       name: "Recovered",
@@ -24,7 +25,7 @@ const Chart = () => {
     },
     {
       name: "Deaths",
-      data: [17, 259, 1666, 2996, 6472, 49675, 140658, 238619, 269567],
+      data: dailyData.map(({ deaths }) => deaths),
     },
   ];
   const options = {
@@ -45,7 +46,7 @@ const Chart = () => {
         "4/1/20",
         "4/15/20",
         "5/1/20",
-        "5/7/20",
+        "5/7/21",
       ],
     },
     tooltip: {
@@ -59,8 +60,20 @@ const Chart = () => {
     <>
       <div className="chartContainer">
         <h3>COVID-19 Chart</h3>
-        <ApexChart options={options} series={series} type="area" height={350} />
-        <ApexChart options={options} series={series} type="bar" height={350} />
+        <ApexChart
+          className="apChart"
+          options={options}
+          series={series}
+          type="area"
+          height={350}
+        />
+        <ApexChart
+          className="apChart1"
+          options={options}
+          series={series}
+          type="bar"
+          height={350}
+        />
       </div>
     </>
   );
