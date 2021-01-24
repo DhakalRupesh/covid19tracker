@@ -3,6 +3,7 @@ import axios from "axios";
 import NumFormat from "react-number-format";
 import CountUp from "react-countup";
 import "./Cards.css";
+import "../Country/Country.css";
 
 const Cards = () => {
   const [covid, setcovid] = useState([]);
@@ -36,13 +37,30 @@ const Cards = () => {
   }, []);
 
   const filterCountry = results.filter((item) => {
+    // return searchCountries !== ""
+    //   ? item.country.toLowerCase().includes(searchCountries.toLocaleLowerCase())
+    //   : item;
+
+    // return searchCountries !== ""
+    //   ? item.country.toLowerCase() === searchCountries
+    //   : null;
     return searchCountries !== ""
-      ? item.country.toLowerCase().includes(searchCountries.toLocaleLowerCase())
-      : item;
+      ? item.country.toLowerCase().includes(searchCountries.toLowerCase())
+      : null;
     // return item.country === searchCountry;
   });
 
   const countries = filterCountry.map((data, i) => {
+    return (
+      <div>
+        <img src={data.countryInfo.flag} alt="country flag" />
+        <h1>{data.country}</h1>
+        <p>{data.cases}</p>
+      </div>
+    );
+  });
+
+  const countriess = filterCountry.map((data, i) => {
     return (
       <div>
         <img src={data.countryInfo.flag} alt="country flag" />
@@ -91,14 +109,16 @@ const Cards = () => {
           <h6>{new Date(covid.updated).toDateString()}</h6>
         </div>
       </div>
-      <form action="submit">
-        <input
-          type="text"
-          id="countrySearch"
-          placeholder="Search country ...."
-          onChange={(e) => setSearchCountries(e.target.value)}
-        />
-      </form>
+      <div className="countryContainer">
+        <form action="submit">
+          <input
+            type="text"
+            id="countrySearch"
+            placeholder="Search country ...."
+            onChange={(e) => setSearchCountries(e.target.value)}
+          />
+        </form>
+      </div>
       {countries}
     </>
   );

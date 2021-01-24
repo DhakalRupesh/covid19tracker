@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const url = "https://corona.lmao.ninja/v3/covid-19/all";
-const url1 = "https://covid19.mathdro.id/api";
+const countryUrl = "https://corona.lmao.ninja/v3/covid-19/countries";
 
 export const getData = async () => {
   const {
