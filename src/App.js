@@ -19,8 +19,8 @@ export default function App() {
     <div>
       <Banner />
       <Cards />
-      <Country />
-      <Chart />
+      {/* <Country /> */}
+      {/* <Chart /> */}
     </div>
   );
 }

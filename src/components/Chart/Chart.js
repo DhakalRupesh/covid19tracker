@@ -8,10 +8,10 @@ const Chart = () => {
 
   useEffect(() => {
     const FetchDailyAPI = async () => {
-      setDailyData(await fetchDailyData());
+      // setDailyData(await fetchDailyData());
     };
     console.log(dailyData);
-    FetchDailyAPI();
+    // FetchDailyAPI();
   });
 
   const series = [
@@ -46,7 +46,7 @@ const Chart = () => {
         "4/1/20",
         "4/15/20",
         "5/1/20",
-        "5/7/21",
+        "5/7/20",
       ],
     },
     tooltip: {

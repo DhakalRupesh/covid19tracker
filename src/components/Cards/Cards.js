@@ -5,17 +5,55 @@ import CountUp from "react-countup";
 import "./Cards.css";
 
 const Cards = () => {
-  const [covid, setcovid] = useState("");
+  const [covid, setcovid] = useState([]);
+  const [results, setResults] = useState([]);
+  const [searchCountries, setSearchCountries] = useState("");
+
+  // useEffect(() => {
+  //   axios
+  //     .get("https://corona.lmao.ninja/v3/covid-19/all")
+  //     .then((res) => {
+  //       setcovid(res.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
   useEffect(() => {
     axios
-      .get("https://corona.lmao.ninja/v3/covid-19/all")
-      .then((res) => {
-        setcovid(res.data);
+      .all([
+        axios.get("https://corona.lmao.ninja/v3/covid-19/all"),
+        axios.get("https://corona.lmao.ninja/v3/covid-19/countries"),
+      ])
+      .then((responseArr) => {
+        setcovid(responseArr[0].data);
+        setResults(responseArr[1].data);
+        // setLoading(false);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
+
+  const filterCountry = results.filter((item) => {
+    return searchCountries !== ""
+      ? item.country.toLowerCase().includes(searchCountries.toLocaleLowerCase())
+      : item;
+    // return item.country === searchCountry;
+  });
+
+  const countries = filterCountry.map((data, i) => {
+    return (
+      <div>
+        <img src={data.countryInfo.flag} alt="country flag" />
+        <h1>{data.country}</h1>
+        <p>{data.cases}</p>
+      </div>
+    );
+  });
+
+  // filtering
+
   return (
     <>
       <div className="cardContainer">
@@ -53,6 +91,15 @@ const Cards = () => {
           <h6>{new Date(covid.updated).toDateString()}</h6>
         </div>
       </div>
+      <form action="submit">
+        <input
+          type="text"
+          id="countrySearch"
+          placeholder="Search country ...."
+          onChange={(e) => setSearchCountries(e.target.value)}
+        />
+      </form>
+      {countries}
     </>
   );
 };
