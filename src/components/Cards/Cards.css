@@ -66,4 +66,114 @@
 .cardContainer .deathsCard h6 {
   color: #696868;
 }
+
+.filterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-shadow: 0px 10px 20px #dfdfdf;
+          box-shadow: 0px 10px 20px #dfdfdf;
+  margin: 0 0 25px 0;
+  border-radius: 16px;
+}
+
+.filterContainer .imgContainer {
+  width: 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.filterContainer .imgContainer img {
+  height: 70px;
+  margin: 20px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 10px 20px #dfdfdf;
+          box-shadow: 0px 10px 20px #dfdfdf;
+}
+
+.filterContainer .imgContainer h5 {
+  text-align: center;
+  color: #404040;
+  font-weight: bold;
+}
+
+.filterContainer .filterInformations {
+  width: 42%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.filterContainer .filterInformations h3 {
+  color: #404040;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.filterContainer .filterInformations p {
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 10px 20px #dfdfdf;
+          box-shadow: 0px 10px 20px #dfdfdf;
+  padding: 12px;
+}
+
+.filterContainer .filterInformations p .cases {
+  color: #a57f0d;
+}
+
+.filterContainer .filterInformations p .recovered {
+  color: #55a659;
+}
+
+.filterContainer .filterInformations p .death {
+  color: #ef5350;
+}
+
+.filterContainer .filterInformations1 {
+  width: 42%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.filterContainer .filterInformations1 h3 {
+  color: #404040;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.filterContainer .filterInformations1 p {
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 10px 20px #dfdfdf;
+          box-shadow: 0px 10px 20px #dfdfdf;
+  padding: 12px;
+}
+
+.filterContainer .filterInformations1 p .cases {
+  color: #ffb74d;
+}
+
+.filterContainer .filterInformations1 p .recovered {
+  color: #757575;
+}
+
+.filterContainer .filterInformations1 p .death {
+  color: #ec407a;
+}
 /*# sourceMappingURL=Cards.css.map */

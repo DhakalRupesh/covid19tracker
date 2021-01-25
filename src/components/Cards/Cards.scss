@@ -51,3 +51,79 @@
     }
   }
 }
+.filterContainer {
+  display: flex;
+  width: 100%;
+  // align-items: center;
+  box-shadow: 0px 10px 20px #dfdfdf;
+  margin: 0 0 25px 0;
+  border-radius: 16px;
+  .imgContainer {
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    img {
+      height: 70px;
+      margin: 20px;
+      border-radius: 100px;
+      box-shadow: 0px 10px 20px #dfdfdf;
+    }
+    h5 {
+      text-align: center;
+      color: #404040;
+      font-weight: bold;
+    }
+  }
+  .filterInformations {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    h3 {
+      color: #404040;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    p {
+      border-radius: 16px;
+      box-shadow: 0px 10px 20px #dfdfdf;
+      padding: 12px;
+
+      .cases {
+        color: #a57f0d;
+      }
+      .recovered {
+        color: #55a659;
+      }
+      .death {
+        color: #ef5350;
+      }
+    }
+  }
+  .filterInformations1 {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    h3 {
+      color: #404040;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    p {
+      border-radius: 16px;
+      box-shadow: 0px 10px 20px #dfdfdf;
+      padding: 12px;
+
+      .cases {
+        color: #ffb74d;
+      }
+      .recovered {
+        color: #757575;
+      }
+      .death {
+        color: #ec407a;
+      }
+    }
+  }
+}

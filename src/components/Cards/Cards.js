@@ -36,6 +36,7 @@ const Cards = () => {
       });
   }, []);
 
+  // filtering the country
   const filterCountry = results.filter((item) => {
     // return searchCountries !== ""
     //   ? item.country.toLowerCase().includes(searchCountries.toLocaleLowerCase())
@@ -52,60 +53,77 @@ const Cards = () => {
 
   const countries = filterCountry.map((data, i) => {
     return (
-      <div>
-        <img src={data.countryInfo.flag} alt="country flag" />
-        <h1>{data.country}</h1>
-        <p>{data.cases}</p>
+      <div className="filterContainer">
+        <div className="imgContainer">
+          <img
+            className="filterImage"
+            src={data.countryInfo.flag}
+            alt="country flag"
+          />
+          <h5>{data.country}</h5>
+        </div>
+
+        <div className="filterInformations">
+          {/* <h3>{data.country}</h3> */}
+          <p>
+            <span className="cases">Infected </span> {data.cases}
+          </p>
+          <p>
+            <span className="recovered">Recovered</span> {data.recovered}
+          </p>
+          <p>
+            <span className="death">Deaths</span> {data.deaths}
+          </p>
+        </div>
+        <div className="filterInformations1">
+          <p>
+            <span className="cases">Active </span> {data.active}
+          </p>
+          <p>
+            <span className="recovered">Tests</span> {data.tests}
+          </p>
+          <p>
+            <span className="death">Critical</span> {data.critical}
+          </p>
+        </div>
       </div>
     );
   });
-
-  const countriess = filterCountry.map((data, i) => {
-    return (
-      <div>
-        <img src={data.countryInfo.flag} alt="country flag" />
-        <h1>{data.country}</h1>
-        <p>{data.cases}</p>
-      </div>
-    );
-  });
-
-  // filtering
 
   return (
     <>
       <div className="cardContainer">
         <div className="infectedCard">
           <h4>Infected</h4>
-          <h5>
+          <h6>
             <NumFormat
               value={covid.cases}
               displayType={"text"}
               thousandSeparator={true}
             />
-          </h5>
+          </h6>
           <h6>{new Date(covid.updated).toDateString()}</h6>
         </div>
         <div className="recoveredCard">
           <h4>Recovered</h4>
-          <h5>
+          <h6>
             <NumFormat
               value={covid.recovered}
               displayType={"text"}
               thousandSeparator={true}
             />
-          </h5>
+          </h6>
           <h6>{new Date(covid.updated).toDateString()}</h6>
         </div>
         <div className="deathsCard">
           <h4>Deaths</h4>
-          <h5>
+          <h6>
             <NumFormat
               value={covid.deaths}
               displayType={"text"}
               thousandSeparator={true}
             />
-          </h5>
+          </h6>
           <h6>{new Date(covid.updated).toDateString()}</h6>
         </div>
       </div>
