@@ -76,11 +76,6 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    h3 {
-      color: #404040;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
     p {
       border-radius: 16px;
       box-shadow: 0px 10px 20px #dfdfdf;
@@ -102,11 +97,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    h3 {
-      color: #404040;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
+
     p {
       border-radius: 16px;
       box-shadow: 0px 10px 20px #dfdfdf;
@@ -120,6 +111,130 @@
       }
       .death {
         color: #ec407a;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .cardContainer {
+    // padding: 20px;
+    display: flex;
+    flex-direction: column;
+    .infectedCard {
+      text-align: center;
+      margin: 20px 0 20px 0;
+    }
+    .recoveredCard {
+      text-align: center;
+      margin: 20px 0 20px 0;
+    }
+    .deathsCard {
+      text-align: center;
+      margin: 20px 0 20px 0;
+    }
+  }
+  .filterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .imgContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+        height: 150px;
+        margin: 0px 20px 20px 20px;
+        // padding: 20px;
+        border-radius: 16px;
+        box-shadow: none;
+        align-self: center;
+      }
+      h5 {
+        text-align: center;
+        color: #404040;
+        font-weight: bold;
+      }
+    }
+    .filterInformations {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      p {
+        text-align: center;
+      }
+    }
+    .filterInformations1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1004px) {
+  .cardContainer {
+    // padding: 20px;
+    display: flex;
+    flex-direction: column;
+    .infectedCard {
+      text-align: center;
+      margin: 20px 0 20px 0;
+    }
+    .recoveredCard {
+      text-align: center;
+      margin: 20px 0 20px 0;
+    }
+    .deathsCard {
+      text-align: center;
+      margin: 20px 0 20px 0;
+    }
+  }
+  .filterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .imgContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+        height: 150px;
+        margin: 0px 20px 20px 20px;
+        // padding: 20px;
+        border-radius: 16px;
+        box-shadow: none;
+        align-self: center;
+      }
+      h5 {
+        text-align: center;
+        color: #404040;
+        font-weight: bold;
+      }
+    }
+    .filterInformations {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      p {
+        text-align: center;
+      }
+    }
+    .filterInformations1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      p {
+        text-align: center;
       }
     }
   }

@@ -112,12 +112,6 @@
   padding: 20px;
 }
 
-.filterContainer .filterInformations h3 {
-  color: #404040;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
 .filterContainer .filterInformations p {
   border-radius: 16px;
   -webkit-box-shadow: 0px 10px 20px #dfdfdf;
@@ -149,12 +143,6 @@
   padding: 20px;
 }
 
-.filterContainer .filterInformations1 h3 {
-  color: #404040;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
 .filterContainer .filterInformations1 p {
   border-radius: 16px;
   -webkit-box-shadow: 0px 10px 20px #dfdfdf;
@@ -172,5 +160,185 @@
 
 .filterContainer .filterInformations1 p .death {
   color: #ec407a;
+}
+
+@media only screen and (max-width: 767px) {
+  .cardContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cardContainer .infectedCard {
+    text-align: center;
+    margin: 20px 0 20px 0;
+  }
+  .cardContainer .recoveredCard {
+    text-align: center;
+    margin: 20px 0 20px 0;
+  }
+  .cardContainer .deathsCard {
+    text-align: center;
+    margin: 20px 0 20px 0;
+  }
+  .filterContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .filterContainer .imgContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filterContainer .imgContainer img {
+    width: 100%;
+    height: 150px;
+    margin: 0px 20px 20px 20px;
+    border-radius: 16px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .filterContainer .imgContainer h5 {
+    text-align: center;
+    color: #404040;
+    font-weight: bold;
+  }
+  .filterContainer .filterInformations {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+  .filterContainer .filterInformations p {
+    text-align: center;
+  }
+  .filterContainer .filterInformations1 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+  .filterContainer .filterInformations1 p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1004px) {
+  .cardContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cardContainer .infectedCard {
+    text-align: center;
+    margin: 20px 0 20px 0;
+  }
+  .cardContainer .recoveredCard {
+    text-align: center;
+    margin: 20px 0 20px 0;
+  }
+  .cardContainer .deathsCard {
+    text-align: center;
+    margin: 20px 0 20px 0;
+  }
+  .filterContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .filterContainer .imgContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filterContainer .imgContainer img {
+    width: 100%;
+    height: 150px;
+    margin: 0px 20px 20px 20px;
+    border-radius: 16px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .filterContainer .imgContainer h5 {
+    text-align: center;
+    color: #404040;
+    font-weight: bold;
+  }
+  .filterContainer .filterInformations {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+  .filterContainer .filterInformations p {
+    text-align: center;
+  }
+  .filterContainer .filterInformations1 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+  .filterContainer .filterInformations1 p {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=Cards.css.map */
