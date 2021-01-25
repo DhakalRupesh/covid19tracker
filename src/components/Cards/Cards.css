@@ -14,7 +14,6 @@
 
 .cardContainer .infectedCard h4 {
   color: #a57f0d;
-  font-weight: bold;
 }
 
 .cardContainer .infectedCard h5 {
@@ -35,7 +34,6 @@
 
 .cardContainer .recoveredCard h4 {
   color: #55a659;
-  font-weight: bold;
 }
 
 .cardContainer .recoveredCard h5 {
@@ -56,7 +54,6 @@
 
 .cardContainer .deathsCard h4 {
   color: #ef5350;
-  font-weight: bold;
 }
 
 .cardContainer .deathsCard h5 {
@@ -74,7 +71,7 @@
   width: 100%;
   -webkit-box-shadow: 0px 10px 20px #dfdfdf;
           box-shadow: 0px 10px 20px #dfdfdf;
-  margin: 0 0 25px 0;
+  margin: 40px 0 25px 0;
   border-radius: 16px;
 }
 

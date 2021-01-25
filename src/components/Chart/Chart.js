@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ApexChart from "react-apexcharts";
 import "./Chart.css";
-import { fetchDailyData } from "../../api/index";
 
 const Chart = () => {
   const [dailyData, setDailyData] = useState([]);

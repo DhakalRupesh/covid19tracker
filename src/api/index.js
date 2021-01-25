@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const url = "https://corona.lmao.ninja/v3/covid-19/all";
-const countryUrl = "https://corona.lmao.ninja/v3/covid-19/countries";
+// const countryUrl = "https://corona.lmao.ninja/v3/covid-19/countries";
 
 export const getData = async () => {
   const {
@@ -44,20 +44,20 @@ export const getData = async () => {
 //   }
 // };
 
-export const fetchDailyData = async () => {
-  try {
-    const { data } = await axios.get(`${countryUrl}/daily`);
+// export const fetchDailyData = async () => {
+//   try {
+//     const { data } = await axios.get(`${countryUrl}/daily`);
 
-    // looping the array data
-    const modifiedData = data.map((dailyData) => ({
-      confirmed: dailyData.confirmed,
-      deaths: dailyData.deaths,
-      date: dailyData.reportDate,
-    }));
+//     // looping the array data
+//     const modifiedData = data.map((dailyData) => ({
+//       confirmed: dailyData.confirmed,
+//       deaths: dailyData.deaths,
+//       date: dailyData.reportDate,
+//     }));
 
-    return modifiedData;
-  } catch (e) {
-    console.log(e);
-    throw e;
-  }
-};
+//     return modifiedData;
+//   } catch (e) {
+//     console.log(e);
+//     throw e;
+//   }
+// };

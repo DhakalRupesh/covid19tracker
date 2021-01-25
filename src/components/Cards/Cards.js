@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import NumFormat from "react-number-format";
-import CountUp from "react-countup";
 import "./Cards.css";
 import "../Country/Country.css";
 
