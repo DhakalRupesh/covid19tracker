@@ -46,7 +46,7 @@ export const getData = async () => {
 
 export const fetchDailyData = async () => {
   try {
-    const { data } = await axios.get(`${url1}/daily`);
+    const { data } = await axios.get(`${countryUrl}/daily`);
 
     // looping the array data
     const modifiedData = data.map((dailyData) => ({
