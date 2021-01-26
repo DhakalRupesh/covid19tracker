@@ -72,7 +72,7 @@ const Cards = () => {
             />
           </p>
           <p>
-            <span className="recovered">Recovered</span>
+            <span className="recovered">Recovered </span>
             <NumFormat
               value={data.recovered}
               displayType={"text"}
@@ -80,7 +80,7 @@ const Cards = () => {
             />
           </p>
           <p>
-            <span className="death">Deaths</span>
+            <span className="death">Deaths </span>
             <NumFormat
               value={data.deaths}
               displayType={"text"}
@@ -98,7 +98,7 @@ const Cards = () => {
             />
           </p>
           <p>
-            <span className="recovered">Tests</span>
+            <span className="recovered">Tests </span>
             <NumFormat
               value={data.tests}
               displayType={"text"}
@@ -106,7 +106,7 @@ const Cards = () => {
             />
           </p>
           <p>
-            <span className="death">Critical</span>
+            <span className="death">Critical </span>
             <NumFormat
               value={data.critical}
               displayType={"text"}
