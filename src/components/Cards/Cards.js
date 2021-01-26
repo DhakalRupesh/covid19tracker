@@ -64,24 +64,54 @@ const Cards = () => {
 
         <div className="filterInformations">
           <p>
-            <span className="cases">Infected </span> {data.cases}
+            <span className="cases">Infected </span>
+            <NumFormat
+              value={data.cases}
+              displayType={"text"}
+              thousandSeparator={true}
+            />
           </p>
           <p>
-            <span className="recovered">Recovered</span> {data.recovered}
+            <span className="recovered">Recovered</span>
+            <NumFormat
+              value={data.recovered}
+              displayType={"text"}
+              thousandSeparator={true}
+            />
           </p>
           <p>
-            <span className="death">Deaths</span> {data.deaths}
+            <span className="death">Deaths</span>
+            <NumFormat
+              value={data.deaths}
+              displayType={"text"}
+              thousandSeparator={true}
+            />
           </p>
         </div>
         <div className="filterInformations1">
           <p>
-            <span className="cases">Active </span> {data.active}
+            <span className="cases">Active </span>
+            <NumFormat
+              value={data.active}
+              displayType={"text"}
+              thousandSeparator={true}
+            />
           </p>
           <p>
-            <span className="recovered">Tests</span> {data.tests}
+            <span className="recovered">Tests</span>
+            <NumFormat
+              value={data.tests}
+              displayType={"text"}
+              thousandSeparator={true}
+            />
           </p>
           <p>
-            <span className="death">Critical</span> {data.critical}
+            <span className="death">Critical</span>
+            <NumFormat
+              value={data.critical}
+              displayType={"text"}
+              thousandSeparator={true}
+            />
           </p>
         </div>
       </div>
