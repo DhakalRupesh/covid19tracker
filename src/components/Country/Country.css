@@ -18,4 +18,18 @@
   -webkit-box-shadow: 0px 10px 15px #f5f4f4;
           box-shadow: 0px 10px 15px #f5f4f4;
 }
+
+.countryContainer .note {
+  visibility: hidden;
+  padding: 10px 0 0 0;
+  color: #55a659;
+}
+
+@media only screen and (max-width: 767px) {
+  .countryContainer .note {
+    visibility: visible;
+    padding: 10px 0 0 0;
+    color: #55a659;
+  }
+}
 /*# sourceMappingURL=Country.css.map */

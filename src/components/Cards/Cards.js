@@ -63,7 +63,6 @@ const Cards = () => {
         </div>
 
         <div className="filterInformations">
-          {/* <h3>{data.country}</h3> */}
           <p>
             <span className="cases">Infected </span> {data.cases}
           </p>
@@ -127,7 +126,7 @@ const Cards = () => {
         </div>
       </div>
       <div className="countryContainer">
-        <form action="submit">
+        <form>
           <input
             type="text"
             id="countrySearch"
@@ -135,6 +134,7 @@ const Cards = () => {
             onChange={(e) => setSearchCountries(e.target.value)}
           />
         </form>
+        <p className="note">Note: Type and scroll to view country result</p>
       </div>
       {countries}
     </>

@@ -15,10 +15,19 @@
       }
     }
   }
+  .note {
+    visibility: hidden;
+    padding: 10px 0 0 0;
+    color: #55a659;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .countryContainer {
-    // padding: 0 20px 0 20px;
+    .note {
+      visibility: visible;
+      padding: 10px 0 0 0;
+      color: #55a659;
+    }
   }
 }

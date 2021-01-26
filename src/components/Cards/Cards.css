@@ -71,7 +71,7 @@
   width: 100%;
   -webkit-box-shadow: 0px 10px 20px #dfdfdf;
           box-shadow: 0px 10px 20px #dfdfdf;
-  margin: 40px 0 25px 0;
+  margin: 15px 0 25px 0;
   border-radius: 16px;
 }
 
@@ -175,14 +175,17 @@
   .cardContainer .infectedCard {
     text-align: center;
     margin: 20px 0 20px 0;
+    padding: 20px;
   }
   .cardContainer .recoveredCard {
     text-align: center;
     margin: 20px 0 20px 0;
+    padding: 20px;
   }
   .cardContainer .deathsCard {
     text-align: center;
     margin: 20px 0 20px 0;
+    padding: 20px;
   }
   .filterContainer {
     display: -webkit-box;
@@ -207,99 +210,9 @@
             flex-direction: column;
   }
   .filterContainer .imgContainer img {
-    width: 100%;
+    width: 85%;
     height: 150px;
-    margin: 0px 20px 20px 20px;
-    border-radius: 16px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  .filterContainer .imgContainer h5 {
-    text-align: center;
-    color: #404040;
-    font-weight: bold;
-  }
-  .filterContainer .filterInformations {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 20px;
-  }
-  .filterContainer .filterInformations p {
-    text-align: center;
-  }
-  .filterContainer .filterInformations1 {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 20px;
-  }
-  .filterContainer .filterInformations1 p {
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 1004px) {
-  .cardContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .cardContainer .infectedCard {
-    text-align: center;
-    margin: 20px 0 20px 0;
-  }
-  .cardContainer .recoveredCard {
-    text-align: center;
-    margin: 20px 0 20px 0;
-  }
-  .cardContainer .deathsCard {
-    text-align: center;
-    margin: 20px 0 20px 0;
-  }
-  .filterContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .filterContainer .imgContainer {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .filterContainer .imgContainer img {
-    width: 100%;
-    height: 150px;
-    margin: 0px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
     border-radius: 16px;
     -webkit-box-shadow: none;
             box-shadow: none;
